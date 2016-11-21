@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		5606A4521DE257E000930FC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5606A4511DE257E000930FC2 /* AppDelegate.swift */; };
-		5606A4541DE257E000930FC2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5606A4531DE257E000930FC2 /* ViewController.swift */; };
 		5606A4571DE257E000930FC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5606A4551DE257E000930FC2 /* Main.storyboard */; };
 		5606A4591DE257E000930FC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5606A4581DE257E000930FC2 /* Assets.xcassets */; };
 		5606A45C1DE257E000930FC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5606A45A1DE257E000930FC2 /* LaunchScreen.storyboard */; };
 		5606A4671DE257E000930FC2 /* CrowdMatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5606A4661DE257E000930FC2 /* CrowdMatchTests.swift */; };
 		5606A4721DE257E000930FC2 /* CrowdMatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5606A4711DE257E000930FC2 /* CrowdMatchUITests.swift */; };
+		56E7CA1B1DE2C36E00EE76E8 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E7CA1A1DE2C36E00EE76E8 /* LandingViewController.swift */; };
+		56E7CA1D1DE2C3CD00EE76E8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E7CA1C1DE2C3CD00EE76E8 /* HomeViewController.swift */; };
+		56E7CA1F1DE2C3DD00EE76E8 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E7CA1E1DE2C3DD00EE76E8 /* FavoritesViewController.swift */; };
+		56E7CA211DE2C4D300EE76E8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E7CA201DE2C4D300EE76E8 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,6 @@
 /* Begin PBXFileReference section */
 		5606A44E1DE257E000930FC2 /* CrowdMatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrowdMatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5606A4511DE257E000930FC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5606A4531DE257E000930FC2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5606A4561DE257E000930FC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5606A4581DE257E000930FC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5606A45B1DE257E000930FC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,10 @@
 		5606A46D1DE257E000930FC2 /* CrowdMatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrowdMatchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5606A4711DE257E000930FC2 /* CrowdMatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrowdMatchUITests.swift; sourceTree = "<group>"; };
 		5606A4731DE257E000930FC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		56E7CA1A1DE2C36E00EE76E8 /* LandingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
+		56E7CA1C1DE2C3CD00EE76E8 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		56E7CA1E1DE2C3DD00EE76E8 /* FavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		56E7CA201DE2C4D300EE76E8 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +104,14 @@
 			isa = PBXGroup;
 			children = (
 				5606A4511DE257E000930FC2 /* AppDelegate.swift */,
-				5606A4531DE257E000930FC2 /* ViewController.swift */,
 				5606A4551DE257E000930FC2 /* Main.storyboard */,
+				56E7CA201DE2C4D300EE76E8 /* ProfileViewController.swift */,
 				5606A4581DE257E000930FC2 /* Assets.xcassets */,
 				5606A45A1DE257E000930FC2 /* LaunchScreen.storyboard */,
 				5606A45D1DE257E000930FC2 /* Info.plist */,
+				56E7CA1A1DE2C36E00EE76E8 /* LandingViewController.swift */,
+				56E7CA1E1DE2C3DD00EE76E8 /* FavoritesViewController.swift */,
+				56E7CA1C1DE2C3CD00EE76E8 /* HomeViewController.swift */,
 			);
 			path = CrowdMatch;
 			sourceTree = "<group>";
@@ -262,8 +271,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5606A4541DE257E000930FC2 /* ViewController.swift in Sources */,
+				56E7CA1B1DE2C36E00EE76E8 /* LandingViewController.swift in Sources */,
 				5606A4521DE257E000930FC2 /* AppDelegate.swift in Sources */,
+				56E7CA211DE2C4D300EE76E8 /* ProfileViewController.swift in Sources */,
+				56E7CA1F1DE2C3DD00EE76E8 /* FavoritesViewController.swift in Sources */,
+				56E7CA1D1DE2C3CD00EE76E8 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,6 +524,7 @@
 				5606A4781DE257E000930FC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5606A4791DE257E000930FC2 /* Build configuration list for PBXNativeTarget "CrowdMatchTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +533,7 @@
 				5606A47B1DE257E000930FC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5606A47C1DE257E000930FC2 /* Build configuration list for PBXNativeTarget "CrowdMatchUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +542,7 @@
 				5606A47E1DE257E000930FC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
