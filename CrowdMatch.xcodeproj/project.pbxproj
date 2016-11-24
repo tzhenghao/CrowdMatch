@@ -13,6 +13,7 @@
 		5606A45C1DE257E000930FC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5606A45A1DE257E000930FC2 /* LaunchScreen.storyboard */; };
 		5606A4671DE257E000930FC2 /* CrowdMatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5606A4661DE257E000930FC2 /* CrowdMatchTests.swift */; };
 		5606A4721DE257E000930FC2 /* CrowdMatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5606A4711DE257E000930FC2 /* CrowdMatchUITests.swift */; };
+		562A49531DE6A35A00AD0E2B /* CategoryListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562A49521DE6A35A00AD0E2B /* CategoryListingViewController.swift */; };
 		56E7CA1B1DE2C36E00EE76E8 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E7CA1A1DE2C36E00EE76E8 /* LandingViewController.swift */; };
 		56E7CA1D1DE2C3CD00EE76E8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E7CA1C1DE2C3CD00EE76E8 /* HomeViewController.swift */; };
 		56E7CA1F1DE2C3DD00EE76E8 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E7CA1E1DE2C3DD00EE76E8 /* FavoritesViewController.swift */; };
@@ -49,6 +50,7 @@
 		5606A46D1DE257E000930FC2 /* CrowdMatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrowdMatchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5606A4711DE257E000930FC2 /* CrowdMatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrowdMatchUITests.swift; sourceTree = "<group>"; };
 		5606A4731DE257E000930FC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		562A49521DE6A35A00AD0E2B /* CategoryListingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CategoryListingViewController.swift; path = Category/CategoryListingViewController.swift; sourceTree = "<group>"; };
 		56E7CA1A1DE2C36E00EE76E8 /* LandingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
 		56E7CA1C1DE2C3CD00EE76E8 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		56E7CA1E1DE2C3DD00EE76E8 /* FavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 			children = (
 				5606A4511DE257E000930FC2 /* AppDelegate.swift */,
 				5606A4551DE257E000930FC2 /* Main.storyboard */,
+				562A49521DE6A35A00AD0E2B /* CategoryListingViewController.swift */,
 				56E7CA201DE2C4D300EE76E8 /* ProfileViewController.swift */,
 				5606A4581DE257E000930FC2 /* Assets.xcassets */,
 				5606A45A1DE257E000930FC2 /* LaunchScreen.storyboard */,
@@ -274,6 +277,7 @@
 				56E7CA1B1DE2C36E00EE76E8 /* LandingViewController.swift in Sources */,
 				5606A4521DE257E000930FC2 /* AppDelegate.swift in Sources */,
 				56E7CA211DE2C4D300EE76E8 /* ProfileViewController.swift in Sources */,
+				562A49531DE6A35A00AD0E2B /* CategoryListingViewController.swift in Sources */,
 				56E7CA1F1DE2C3DD00EE76E8 /* FavoritesViewController.swift in Sources */,
 				56E7CA1D1DE2C3CD00EE76E8 /* HomeViewController.swift in Sources */,
 			);

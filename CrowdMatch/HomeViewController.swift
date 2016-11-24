@@ -8,16 +8,44 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, UISearchBarDelegate {
+    
+    // MARK: Outlets
 
-    @IBOutlet weak var topSearchBar: UISearchBar!
+    @IBOutlet weak var homeViewSearchBar: UISearchBar!
+    @IBOutlet weak var categoryScrollView: UIScrollView!
+
+    // MARK: Search bar interfaces
+
+    func initHomeViewSearchBar() {
+        homeViewSearchBar.placeholder = "Search"
+        homeViewSearchBar.isTranslucent = true
+    }
+
+    // MARK: Gesture related handlers
+    private func searchBarShouldReturn(searchBar: UISearchBar) -> Bool {
+        // Hide the keyboard.
+        searchBar.resignFirstResponder()
+        return true
+    }
+    
+    private func searchBarDidEndEditing(searchBar: UISearchBar) {
+        print(searchBar.text!)
+    }
+
+    // MARK: Overriden view controller methods.
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        // Handle the text field’s user input through delegate callbacks.
+        homeViewSearchBar.delegate = self
         
-        topSearchBar.placeholder = "Search"
+        initHomeViewSearchBar()
+
         // Do any additional setup after loading the view.
     }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
