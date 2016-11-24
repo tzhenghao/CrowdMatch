@@ -10,9 +10,12 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var topSearchBar: UISearchBar!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        topSearchBar.placeholder = "Search"
         // Do any additional setup after loading the view.
     }
 

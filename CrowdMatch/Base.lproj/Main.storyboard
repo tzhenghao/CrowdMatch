@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -84,19 +83,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" placeholder="Search for ETAs" translatesAutoresizingMaskIntoConstraints="NO" id="6FO-FH-Xbj">
-                                <rect key="frame" x="16" y="28" width="343" height="44"/>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="NyZ-mU-iIR">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="6FO-FH-Xbj" firstAttribute="trailing" secondItem="QUU-y8-156" secondAttribute="trailingMargin" id="BGa-Nm-gt7"/>
-                            <constraint firstItem="6FO-FH-Xbj" firstAttribute="leading" secondItem="QUU-y8-156" secondAttribute="leadingMargin" id="ICP-6b-RYm"/>
-                            <constraint firstItem="6FO-FH-Xbj" firstAttribute="top" secondItem="URb-Gp-qqH" secondAttribute="bottom" constant="8" id="gZw-lf-cxT"/>
+                            <constraint firstItem="NyZ-mU-iIR" firstAttribute="leading" secondItem="QUU-y8-156" secondAttribute="leading" id="95x-pq-4L4"/>
+                            <constraint firstAttribute="trailing" secondItem="NyZ-mU-iIR" secondAttribute="trailing" id="iwx-fE-4Ki"/>
+                            <constraint firstItem="NyZ-mU-iIR" firstAttribute="top" secondItem="URb-Gp-qqH" secondAttribute="bottom" constant="8" id="w1b-Rb-OCN"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" id="4Oi-AW-SUn"/>
+                    <connections>
+                        <outlet property="topSearchBar" destination="NyZ-mU-iIR" id="X2Q-V1-LTx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dOa-mO-FBL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
