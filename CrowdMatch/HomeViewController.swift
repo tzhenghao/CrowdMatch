@@ -15,24 +15,39 @@ class HomeViewController: UIViewController, UISearchBarDelegate {
     @IBOutlet weak var homeViewSearchBar: UISearchBar!
     @IBOutlet weak var categoryScrollView: UIScrollView!
 
+    @IBOutlet weak var searchBarResult: UILabel!
     // MARK: Search bar interfaces
 
-    func initHomeViewSearchBar() {
+    // MARK: UISearchBarDelegate
+ 
+    private func initHomeViewSearchBar() {
         homeViewSearchBar.placeholder = "Search"
         homeViewSearchBar.isTranslucent = true
     }
 
     // MARK: Gesture related handlers
-    private func searchBarShouldReturn(searchBar: UISearchBar) -> Bool {
+    @objc(searchBarTextDidEndEditing:)
+    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
         // Hide the keyboard.
-        searchBar.resignFirstResponder()
-        return true
-    }
-    
-    private func searchBarDidEndEditing(searchBar: UISearchBar) {
+        searchBarResult.text = searchBar.text
         print(searchBar.text!)
     }
 
+    @objc(searchBarCancelButtonClicked:)
+    func searchBarCancelButtonClicked(_ searchBar : UISearchBar) {
+        print("YAY")
+    }
+    
+    @objc(searchBarSearchButtonClicked:)
+    func searchBarSearchButtonClicked(_ searchBar : UISearchBar) {
+        print("YAY")
+    }
+
+    @objc(searchBarTextDidBeginEditing:)
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        print("STARTED EDITING")
+    }
+    
     // MARK: Overriden view controller methods.
 
     override func viewDidLoad() {
